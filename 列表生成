@@ -1,0 +1,6 @@
+Python另一对list 或 tuple强大的功能为： 可以以list/tuple作为对象实现不同约束下的操作
+eg： 如果list中既包含字符串，又包含整数，忽略非字符串类型的数据，把一个list中所有的字符串变成小写
+
+L=['ADXC','sadDF',123]
+ans=[s.lower() for s in L if isinstance(s,str)]
+print(ans)
